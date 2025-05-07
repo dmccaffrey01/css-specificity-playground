@@ -17,7 +17,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 940px;
     gap: 20px;
 }
 
@@ -30,53 +31,89 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    position: relative;
 }
 
-p ~ h3 {
+/* Element and attribute selectors SELECTORS */
+
+/* p[title="info"] {
+    background-color: pink;
+} */
+
+/* p ~ h3 {
     background-color: brown;
-}
+} */
 
-div > p {
+/* div > p {
     background-color: yellow;
-}
+} */
 
-div p {
+/* div p {
     background-color: orange;
-}
+} */
 
-p {
+/* p {
     background-color: purple;
-}
+} */
 
 /* BASIC SELECTORS */
 
 /* include style="" */
 
-#red {
+/* #red {
     background-color: red;
-}
+} */
 
-#blue {
+/* #blue {
     background-color: blue;
-}
+} */
 
-#green {
+/* #green {
     background-color: green;
-}
+} */
 
-.red {
+/* .red {
     background-color: red;
-}
+} */
 
-.blue {
+/* .blue {
     background-color: blue;
-}
+} */
 
-.green {
+/* .green {
     background-color: green;
-}
+} */
 
 p {
     background-color: purple;
 }
 
+/* Challenge */
+
+.green {
+    background-color: green;
+}
+
+section p {
+    background-color: green;
+}
+
+div section p {
+    background-color: blue;
+}
+
+section ~ p.blue {
+    background-color: red;
+}
+
+div section p.red {
+    background-color: red;
+}
+
+p#box-2 {
+    background-color: blue;
+}
+
+p ~ h3 {
+    background-color: blue;
+}
